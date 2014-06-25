@@ -31,3 +31,11 @@ what gets written to `STDOUT`? How do you go about capturing both `STDOUT` and `
 **Q8:** How would you go about parsing command line arguments that contain a mixture of flags and file arguments? (i.e. something like `ls -a -l foo/*.txt`)
 
 **Answer:**  Use `OptionParser` and pass `ARGV` to its `parse` method.
+
+**Q9:** What features are provided by Ruby's `String` class to help with fixed width text layouts? (i.e. right aligning a column of numbers, or left aligning a column of text with some whitespace after it to keep the total  column width uniform)
+
+**Answer:** `String#ljust` and `String#rjust`. Both methods take an argument (number of characters to pad).
+
+**Q10:** Suppose your script encounters an error and has to terminate itself. What is the idiomatic Unix-style way of reporting that the command did not run successfully?
+
+**Answer:** Return a non-zero exit code.
