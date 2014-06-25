@@ -1,0 +1,62 @@
+foo
+hello.sh
+hello.txt
+output
+
+====
+
+apple.md
+banana.md
+bar.txt
+baz.txt
+quux.txt
+
+====
+
+foo/bar.txt
+foo/baz.txt
+foo/quux.txt
+
+====
+
+total 24
+drwxr-xr-x  7 ngpestelos  staff   238B Jun 22 08:34 foo
+-rwxr-xr-x  1 ngpestelos  staff    39B Jun 22 08:34 hello.sh
+-rw-r--r--  1 ngpestelos  staff    13B Jun 22 08:34 hello.txt
+-rw-r--r--  1 ngpestelos  staff   131B Jun 25 11:30 output
+
+====
+
+.
+..
+.secret
+foo
+hello.sh
+hello.txt
+output
+
+====
+
+total 32
+drwxr-xr-x  7 ngpestelos  staff   238B Jun 25 11:27 .
+drwxr-xr-x  5 ngpestelos  staff   170B Jun 22 08:34 ..
+-rw-r--r--  1 ngpestelos  staff     9B Jun 22 08:34 .secret
+drwxr-xr-x  7 ngpestelos  staff   238B Jun 22 08:34 foo
+-rwxr-xr-x  1 ngpestelos  staff    39B Jun 22 08:34 hello.sh
+-rw-r--r--  1 ngpestelos  staff    13B Jun 22 08:34 hello.txt
+-rw-r--r--  1 ngpestelos  staff   436B Jun 25 11:35 output
+
+====
+
+-rw-r--r--  1 ngpestelos  staff     8B Jun 22 08:34 foo/bar.txt
+-rw-r--r--  1 ngpestelos  staff     8B Jun 22 11:31 foo/baz.txt
+-rw-r--r--  1 ngpestelos  staff    10B Jun 22 08:34 foo/quux.txt
+
+====
+
+ls: missingdir: No such file or directory
+
+====
+
+ls: illegal option -- Z
+usage: ls [-ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1] [file ...]
